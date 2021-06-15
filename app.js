@@ -7,7 +7,7 @@ console.log('sdfsfsdfs')
 const { $ } = window
 
 const another = document.querySelector('#myTabContent #refact')
-const list = document.querySelector('#myTabContent #refact')
+const list = document.querySelector('#profile #list')
 
 const reloadFact = () => $.getJSON('https://catfact.ninja/fact', data => {
   quotesContent.innerHTML = data.fact
