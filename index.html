@@ -10,12 +10,18 @@
 
     <title>Hello, world!</title>
     <style>
-      button {float: right;}
+      .container { margin: 16px auto; }
+      button {  float: right; }
       .jumbotron {
         border-bottom: 1px solid #ccc;
         border-left: 1px solid #ccc;
         border-right: 1px solid #ccc;
         padding: 8px;
+      }
+      table { margin: 8px 4px; }
+      thead {
+        background: #888;
+        color: white;
       }
     </style>
   </head>
@@ -35,19 +41,17 @@
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         
           <div class="jumbotron">
-            <h1 class="display-4">Hello, cats!</h1>
             <button type="button" id="refact" class="btn btn-danger">Get another fact</button>
+            <h1 class="display-4">Hello, cats!</h1>
             <p class="lead"></p>
 
           </div>
 
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
-                  
           <div class="jumbotron">
-            <h1 class="display-4">Hello, cats!</h1>
             <button type="button" id="list" class="btn btn-danger">Get list</button>
+            <h1 class="display-4">Hello, cats!</h1>
             <table class="table">
               <thead>
                 <tr>
