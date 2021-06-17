@@ -15,7 +15,7 @@ const reloadFact = () => $.getJSON('https://catfact.ninja/fact', data => {
 
 const reloadList = () => $.getJSON('https://catfact.ninja/breeds', data => {
   tBody.innerHTML = ''
-  for (const {breed, coat, country, origin, pattern} of data.data) {
+  for (const { breed, coat, country, origin, pattern } of data.data) {
     tBody.innerHTML += `<tr><td>${breed}</td><td>${coat}</td><td>${country}</td><td>${origin}</td><td>${pattern}</td></tr>`
   }
 })
